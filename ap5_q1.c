@@ -7,7 +7,8 @@ void trocar( int *var1, int *var2)
     *var2 = temp;
 }
 
-int main(){
+int main()
+{
     int n1, n2, n3;
     scanf ( "%d %d %d", &n1, &n2, &n3 );
 
