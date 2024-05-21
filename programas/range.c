@@ -29,7 +29,7 @@ int main()
         }
         else if ( rg > 0 && rg <= 2 )
         {
-            printf ( "ta quente;\n" );
+            printf ( "ta fervendo;\n" );
         }
         else if ( rg > 2 && rg <= 4 )
         {
@@ -37,11 +37,11 @@ int main()
         }
         else if ( rg > 4 && rg <= 10 )
         {
-            printf ( "Ta frio;\n" );
+            printf ( "ta frio;\n" );
         }
         else if ( rg > 10 )
         {
-            printf ( "Ta congelando;\n" );
+            printf ( "ta congelando;\n" );
         }
 
         printf ( "Digite outro numero: ");
