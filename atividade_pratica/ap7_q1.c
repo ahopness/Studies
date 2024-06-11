@@ -1,24 +1,21 @@
 #include <stdio.h>
 
-#define ARRMAX 5
+#define STRMAX 500
 
 int main()
 {
-    int m[ARRMAX];
-    for( int i = 0; i < ARRMAX; i++ )
-        scanf( "%d", &m[i] );
+    char tex[STRMAX];
 
-    for( int i = 0; i < ARRMAX; i++ )
+    fgets(tex, STRMAX-1, stdin);
+
+    int ct = 0;
+    for ( int i = 0; i < STRMAX; i++ )
     {
-        int temp = m[i];
-        m[i] = m[ARRMAX - (i+1)];
-        m[ARRMAX - (i+1)] = temp;
+        if ( tex[i] == 'a') 
+            ct++;
     }
-    
-    for( int i = 0; i < ARRMAX; i++ )
-        printf( "%d\t", m[i] );
 
-    printf( "\n" );
+    printf("q. de 'a': %d\n", ct);
 
     return 0;
 }
