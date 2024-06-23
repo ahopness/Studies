@@ -21,23 +21,29 @@ int main()
     int arr[ARRLEN] = { 0 };
     srand(time(NULL));
     for ( int i = 0; i < ARRLEN; i++ )
-        arr[i] = (rand() % 100) + 1;
+        arr[i] = i + 1;
+        //arr[i] = (rand() % 100) + 1;
     
-    print_arr( ARRLEN, arr ); //printf ( "\n");
+    print_arr( ARRLEN, arr );
 
-    int sum_impar = 0, sum_par = 0;
+    int a[ARRLEN/2], b[ARRLEN/2];
+    int a_i = 0, b_i = 0;
     for ( int i = 0; i < ARRLEN; i++ )
     {
-        if ( i % 2 != 0 ) sum_impar += arr[i];
-        if ( i % 2 == 0 ) sum_par += arr[i];
+        if ( i % 2 == 0 ) 
+        {
+            a[a_i] = arr[i];
+            a_i++;
+        }
+        else
+        {
+            b[b_i] = arr[i];
+            b_i++;
+        }
     }
 
-    float div = (float)sum_impar / (float)sum_par;
-
-    printf ( "\n" );
-    printf ( "sum impar: %d\n", sum_impar );
-    printf ( "sum par  : %d\n", sum_par );
-    printf ( "resultado: %.3f\n", div );
+    print_arr( ARRLEN/2, a );
+    print_arr( ARRLEN/2, b );
 
     return 0;
 }
