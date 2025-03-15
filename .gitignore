@@ -1,3 +1,26 @@
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.synctex.gz
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
 # CMake
 CMakeLists.txt.user
 CMakeCache.txt
