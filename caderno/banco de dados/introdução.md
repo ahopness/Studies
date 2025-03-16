@@ -6,9 +6,10 @@
 
 - **Informações X Dados:** Informações são particulas de conhecimento que dados armazenam, uma tabela é composta por dados, seus tipos e suas geometrias.
 <br>
+
 - Mais sobre tabelas dentro do SQL:
-    - **Sintaxe:** Sem espaços e caracteres especiais, basicamente ASCII;
-    - **Laços:** Uma tabela pode se entrelaçar e utilizar dados de outras tabelas, evitando repetições de informações na mesma
+  - **Sintaxe:** Sem espaços e caracteres especiais, basicamente ASCII;
+  - **Laços:** Uma tabela pode se entrelaçar e utilizar dados de outras tabelas, evitando repetições de informações na mesma
 
 <br>
 <img height="200px" src="https://cdn.janbasktraining.com/uploads/images/table-2_1.jpg"></img>
