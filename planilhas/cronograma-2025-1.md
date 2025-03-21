@@ -6,10 +6,10 @@
 <b>Disciplinas e codigos</b>
 <ul>
     <li><b>Calc. 1:</b> IPRJ 01-07575 <i>(T3)</i></li>
-    <li><b>Algoritmos e estrutura de (Dados):</b> IPRJ 01-07583</i></li>
-    <li><b>Projeto e Analise de (Algoritmos):</b> IPRJ 01-10770</i></li>
-    <li><b>Banco de Dados:</b> IPRJ 01-10764</i></li>
-    <li><b>Engenharia Economica:</b> IPRJ 02-10812</i></li>
+    <li><b>Algoritmos e estrutura de (Dados):</b> IPRJ 01-07583</b></li>
+    <li><b>Projeto e Analise de (Algoritmos):</b> IPRJ 01-10770</b></li>
+    <li><b>Banco de Dados:</b> IPRJ 01-10764</b></li>
+    <li><b>Engenharia Economica:</b> IPRJ 02-10812</b></li>
 </ul>
 <br>
 
