@@ -1,4 +1,9 @@
+# Um monte de .pdf, não é uma boa fazer o upload
 aulas/
+
+# Só tem a tasks.json pra compilar c aqui, coisa que não
+# é nada portatil, cada pc deveria ter sua propria configuração.
+.vscode/
 
 # LaTeX
 *.aux
@@ -23,48 +28,20 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# CMake
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
-
-# Prerequisites
-*.d
-
-# Compiled Object files
+# C
 *.slo
 *.lo
 *.o
 *.obj
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
-# Executables
 *.exe
 *.out
 *.app
