@@ -15,7 +15,7 @@
 
 - Pela falta de um **caso base**, tal codigo acaba rodando infinitamente (ou até a nossa runtime reclamar de *stack overflow*), podemos concertar isso inserindo um argumento onde a execução se denomina completa:
 
-```
+```c
 int fat(int n)
 {
     if (n>0) return n * fat(n-1);
