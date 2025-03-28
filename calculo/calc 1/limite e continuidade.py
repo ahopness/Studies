@@ -1,14 +1,14 @@
-# Instruções para execução (rodar comandos no terminal):
+# Instruções para execução (executar comandos no terminal):
 # - Verificar se python esta instalado:
 # - - Windows: "winget install python3"
-# - - Linux(sistemas debian): "sudo apt install python3"
+# - - Linux (com sistemas debian): "sudo apt install python3"
 # - - MacOS: "brew install python3"
 # - Verificar se o sympy esta instalado:
 # - - "pip install sympy"
 #
 # Informações adicionais sobre o codigo:
-# - criei uma classe pra ficar mais facil de calcular
-# todos os limites usando um for loop.
+# - criei a classe 'lim(função, tendencia)' para facilitar
+# o calculo de todos os limites usando um for loop.
 
 from sympy import *
 
@@ -16,6 +16,11 @@ class lim:
     def __init__(self, func, tend):
         self.func = func
         self.tend = tend
+    
+    def esquerdo(self):
+        return limit(self.func, x, self.tend, '-')
+    def direito(self):
+        return limit(self.func, x, self.tend, '+')
 
 x = symbols('x')
 
@@ -40,16 +45,15 @@ i = ((1 - x)
 limite_i = lim(i, 5) # lim i(), onde x -> 5
 
 for limite in [limite_f, limite_g, limite_h, limite_i]:
-    limite_esquerdo = limit(limite.func, x, limite.tend, '-')
-    limite_direito = limit(limite.func, x, limite.tend, '+')
-    limite_em_1 = limite.func.subs(x, 1)
+    print("A função", limite.func, "é")
 
-    print("A função", limite.func, "é...")
-    print(limite_esquerdo, "a esquerda,")
-    print(limite_direito, "a direita")
-    if limite_esquerdo == limite_direito:
-        print("é definido em", limite.tend)
+    print(limite.esquerdo(), "a esquerda,")
+    print(limite.direito(), "a direita")
+
+    if limite.esquerdo() == limite.direito():
+        print("e é definido em", limite.tend)
     else:
-        print("é não é definido em", limite.tend)
+        print("e é não é definido em", limite.tend)
+    
     print("\n")
 

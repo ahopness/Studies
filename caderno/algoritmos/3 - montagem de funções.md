@@ -1,4 +1,4 @@
-**25/03 - Projeto e Analise de Algoritmos - Montagem de funções Part. 1**
+**25/03 - Projeto e Analise de Algoritmos - Montagem de funções**
 
 - Porblemas não são exclusivos de um algoritmo só, eles podem ser resolvidos por vários e de forma plural, porem o algoritmo de melhor esforço vai ser aquele que para toda (ou quase toda) instancia do problema, ele retorna uma instancia correta.
 
@@ -11,7 +11,6 @@
 - Analise Impirica:
   - Avalia o custo de um algoritmo já implementado e em execução de força submissa ao hardware;
   
-<br>
 
 - Analise Matematica (Big O):
   - Avalia formalmente um algotitmo, suas entradas, saindas, complexidade e o tempo de execução
