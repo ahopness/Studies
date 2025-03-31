@@ -1,0 +1,37 @@
+cliente
+- codigo (id)
+- nome 
+- telefone
+- endereço
+
+carro
+- codigo (id)
+- placa 
+- marca
+- ano
+- cor
+- dono (relacional)
+
+especialidade
+- codigo (id)
+- nome 
+- custo/hora
+
+funcionario
+- codigo (id)
+- nome 
+- tipo (relacional)
+
+peça
+- codigo (id)
+- nome 
+- preço
+- qt em estoque
+
+serviço
+- protocolo (id)
+- dano (relacional)
+- carro (relacional)
+- peças (relacional)
+- funcionarios (relacional)
+
