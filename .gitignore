@@ -1,3 +1,6 @@
+# mysqlworkbench
+*.bak
+
 # Um monte de .pdf, não é uma boa fazer o upload
 aulas/
 
