@@ -1,0 +1,11 @@
+INSTRUÇÕES PARA EXECUTAR CODIGO
+1. Instalar Python 3.x;
+1.1. Executar no Terminal:
+1.1.1. Windows: winget install -e --id Python.Python.3.10 --scope machine
+1.1.2. Linux (Debian): sudo apt install python3
+1.1.3. MacOS: brew install python
+2. Extrair arquivos do '.zip';
+3. Abrir Terminal aonde os arquivos extraidos estão;
+4. Executar: python3 main.py
+
+OBS.: Tem outro arquivo python na pasta chamada 'main_threaded.py' que utiliza de multi threading pra fazer os calculos de forma mais rapida, mas os resultados desse programa se mostraram ter muito mais ruído que o calculo feito de forma single thread. Ainda deixei o arquivo pela sua velocidade de execução elevada comparado com o meio tradicional.

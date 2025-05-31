@@ -1,0 +1,35 @@
+1:
+  type: Report
+  serial-number: TCD-CS-2005-57
+  title: "Sorting in the Presence of Branch Prediction and Caches: Fast Sorting on Modern Computers"
+  date: 2005-08
+  author:
+    - Biggar, Paul
+    - Gregg, David
+  url:
+    value: https://www.cs.tcd.ie/publications/tech-reports/reports.05/TCD-CS-2005-57.pdf
+    date: 2025-05
+  organization: "Department of Computer Science"
+  publisher:
+    name: "University of Dublin"
+    location: "Dublin, Ireland"
+
+2:
+  type: Web
+  title: "Dictionary of Algorithms and Data Structures"
+  date: 1998-09
+  author: Black, Paul
+  url:
+    value: https://xlinux.nist.gov/dads/
+    date: 2025-05
+
+3:
+  type: Web
+  title: "Arrays (Java Platform SE 8)"
+  date: 1995
+  company: Oracle
+  url: 
+    value: https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
+    date:
+      2025-05
+  
