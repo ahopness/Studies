@@ -23,25 +23,25 @@ max_tamanho = 5000 + 1
 step_tamanho = 100
 
 from bubblesort import *
-from quicksort import *
+from mergesort import *
 
 import matplotlib.pyplot as plt
 def processar_grafo(tamanhos, func_gerar_vetor, nome_arquivo):
     tempos_bubble = []
-    tempos_quick = []
+    tempos_merge = []
 
     for tamanho in tamanhos:
         vetor = func_gerar_vetor(tamanho)
 
         calcular_tempo(bubble_sort, vetor.copy(), tempos_bubble)
-        calcular_tempo((lambda tam: quick_sort(tam, 0, tamanho-1)), vetor.copy(), tempos_quick)
+        calcular_tempo(merge_sort, vetor.copy(), tempos_merge)
 
-        print(tempos_bubble[-1], ",", tempos_quick[-1])
+        print(tempos_bubble[-1], ",", tempos_merge[-1])
 
     plt.clf()
 
     plt.plot(tamanhos, tempos_bubble, label="Bubble Sort")
-    plt.plot(tamanhos, tempos_quick, label="Quick Sort")
+    plt.plot(tamanhos, tempos_merge, label="Merge Sort")
 
     plt.xlabel('Tamanho da Entrada (nº de elementos)')
     plt.ylabel('Tempo de Execução (s)')
@@ -56,8 +56,7 @@ if __name__ == "__main__":
     processar_grafo(tamanhos_ordinarios, gerar_vetor_decrescente, "ordinarios_decrescente")
     processar_grafo(tamanhos_ordinarios, gerar_vetor_aleatorio, "ordinarios_aleatorio")
 
-    #tamanhos_multiplos = [50, 500, 5000, 50000]
-    tamanhos_multiplos = [10, 100, 1000, 10000]
+    tamanhos_multiplos = [50, 500, 5000, 50000]
     processar_grafo(tamanhos_multiplos, gerar_vetor_crescente, "multiplos_crescente")
     processar_grafo(tamanhos_multiplos, gerar_vetor_decrescente, "multiplos_decrescente")
     processar_grafo(tamanhos_multiplos, gerar_vetor_aleatorio, "multiplos_aleatorio")
