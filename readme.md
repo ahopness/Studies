@@ -13,7 +13,8 @@
     <hr>
     <p><b>Pipeline:</b></p>
     <ul>
-        <li><b>LaTeX Editor:</b> OverLeaf</li>
+        <li><b>Git GUI:</b> SourceGit</li>
+        <li><b>Writting Tool:</b> Typst</li>
         <li><b>Code & Markdown Editor:</b> VSCode via <a href="https://github.com/features/codespaces">Github Codespaces</a></li>
         <ul>
         <li><b>Extensions:</b> <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++</a>, <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a></li>
