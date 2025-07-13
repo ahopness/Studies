@@ -1,0 +1,6 @@
+[submodule "trabalhos/estrutura de dados/implemetacao"]
+	path = trabalhos/estrutura de dados/implemetacao
+	url = https://github.com/ahopness/aed-2025-1
+[submodule "trabalhos/banco de dados/repositorio"]
+	path = trabalhos/banco de dados/repositorio
+	url = https://github.com/ahopness/bd-2025-1.git
