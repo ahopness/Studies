@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import gi
 gi.require_version('Gtk', '4.0')
 from gi.repository import Gtk, GLib
@@ -204,7 +206,7 @@ def resolver(*args):
         i, j, valor = passos[passo_idx]
         GRID_SUDOKU[i][j].get_buffer().set_text(str(valor) if valor != 0 else "", 1)
         
-        GLib.timeout_add(1000, executar_passo, passo_idx + 1)
+        GLib.timeout_add(250, executar_passo, passo_idx + 1)
         return False
     
     if resolver(): # coleta os passos e inicia a animação
